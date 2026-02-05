@@ -9,10 +9,10 @@ Java CLI application that reads HTML content from a URL, tracks tag depth using 
 ```bash
 javac HtmlAnalyzer.java
 
-## Execution
+Execution
 java HtmlAnalyzer <URL>
 
-## example
+Example
 java HtmlAnalyzer http://hiring.axreng.com/internship/example1.html
 -------------------------------------------------------------------
 ## Expected Output
@@ -24,7 +24,7 @@ malformed HTML (if malformed detection is implemented)
 
 URL connection error (if the HTML cannot be retrieved)
 -----------------------------------------------------
-## Approach
+Approach
 
 The solution processes the HTML document line by line and uses a Stack to track the current depth of the tag hierarchy.
 
@@ -38,7 +38,7 @@ Text lines are evaluated against the current maximum depth
 
 If multiple text segments exist at the same deepest level, the first occurrence is returned
 -------------------------------------------------------------------------------------------
-## Assumptions (From Challenge Specification)
+Assumptions (From Challenge Specification)
 
 The solution assumes:
 
@@ -58,7 +58,7 @@ Indentation spaces should be ignored
 
 Empty lines should be ignored
 -------------------------------
-## Malformed HTML Detection (Optional Bonus)
+Malformed HTML Detection (Optional Bonus)
 
 If implemented, malformed HTML is detected when:
 
