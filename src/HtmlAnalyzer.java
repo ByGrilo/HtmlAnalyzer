@@ -10,7 +10,7 @@ public class HtmlAnalyzer {
 
         //Verifica se recebe url
 
-        if (args.length == 1) {
+        if (args.length = !1) {
             return;
         }
         String urlString = args[0];
